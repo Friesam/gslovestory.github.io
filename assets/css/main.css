@@ -2448,6 +2448,10 @@ input::-moz-focus-inner {
 
 		#banner header > p {
 			margin-bottom: 0;
+			
+		}
+		.title-header{
+			font-size: 2em;
 		}
 
 /* Content */

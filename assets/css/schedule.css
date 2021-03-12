@@ -8,6 +8,10 @@
 .header-paragraph{
   text-align: center;
 }
+
+.title-header{
+  font-size: 2em;
+}
 .title{
   position:relative;
   margin-top:30px;
