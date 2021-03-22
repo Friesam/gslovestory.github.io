@@ -87,7 +87,9 @@ $(document).ready(function(){
         });//prev
     //slideshow
     });
-    var countDownDate = new Date("May 22, 2021 09:00:00").getTime();
+    
+    
+var countDownDate = new Date("May 22, 2021 09:00:00").getTime();
 
 // Update the count down every 1 second
 var x = setInterval(function() {

@@ -67,7 +67,7 @@
   top:0;
   left:50%;
   margin-left:-1px;
-  background:#dae71b;
+  background:#f4cbcb;
 }
 .timeline .row.timeline-left,
 .timeline .row.timeline-right .timeline-date{
@@ -94,7 +94,7 @@
   width:14px;
   height:14px;
   top:45px;
-  background:linear-gradient(#4f8fc4, #00539c);
+  background:linear-gradient(#f4cbcb, rgb(97, 28, 28, 0.7));
   box-shadow: 0 0 5px rgba(0,0,0,0.4);
   border-radius: 15px;
   z-index: 1;
@@ -219,10 +219,11 @@ i.fa.fa-map-marker {
 }
 
 .timeline-end .end{
-  background:  linear-gradient(#8F9779, #D4AF37) !important;
+  background: linear-gradient(#8F9779, #f4cbcb) !important
 }
 .timeline-start .end{
-  background:  linear-gradient(#8F9779, #D4AF37) !important;
+  background:  linear-gradient(#8F9779, #f4cbcb) !important
+  /* background:  linear-gradient(#8F9779, #D4AF37) !important; */
 }
 
 @media (max-width:768px){
