@@ -1,0 +1,20 @@
+.fa {
+    font-size: 25px;
+    color: #5e7423;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.text-align {
+text-align: center;
+}
+a {
+    color: #5e7423;
+    text-decoration: wavy;
+    background-color: transparent;
+}
+.profile-img {
+    border-radius: 50%;
+    width: 50%;
+}

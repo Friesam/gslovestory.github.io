@@ -78,3 +78,12 @@ h2{
 .tab-slider--body{
 	margin-bottom: 20px;
 } */
+
+.tab {
+	text-align:center;
+}
+.btn-secondary:hover {
+    color: #fff;
+    background-color:  rgb(97, 28, 28, 0.7);
+    border-color:  rgba(97, 28, 28, 0.7);
+}
