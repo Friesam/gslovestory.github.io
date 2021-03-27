@@ -50,6 +50,11 @@
   width: 205px;
   hseight: 205px;
 } */
+img.golden-flower {
+  display: block;
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
 .w-100 {
   width: 50%!important;
 }
