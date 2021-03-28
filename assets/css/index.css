@@ -1,3 +1,12 @@
+@media (max-width: 768px){
+    .left-flower {
+        display: none;
+    }
+    .right-flower {
+        display: none;
+    }
+}
+
 .title-header{
     text-align: center;
 }
@@ -34,31 +43,31 @@
     }  
     
 }
-.right-flower {
+.left-flower {
     left: 0px;
-    top: 0px;
+    /* top: 0px; */
     background-image: url(https://d2uft7zh7kxc3y.cloudfront.net/themes/simple/la_butte/la_butte_top_left.png);
-    background-size: 430px;
-    width: 340px;
+    background-size: 90%;
+    width: 20%;
     position: fixed;
-
+    z-index: 999;
     /* position: absolute; */
-    background-position: right top;
+    background-position: left top;
     background-repeat: no-repeat;
     /* background-attachment: fixed; */
     min-height: 100%;
     background-color: rgb(41, 52, 71);
 }
-.left-flower {
+.right-flower {
         right: 0px;
-        bottom: 0px;
+        /* bottom: 0px; */
         background-image: url(https://d2uft7zh7kxc3y.cloudfront.net/themes/simple/la_butte/la_butte_bottom_right.png);
-        background-size: 430px;
-        width: 340px;
+        background-size: 90%;
+        width: 20%;
         position: fixed;
-
+        z-index: 999;
         /* position: absolute; */
-        background-position: left bottom;
+        background-position: right bottom;
         /* background-attachment: fixed; */
         background-repeat: no-repeat;
         min-height: 100%;
@@ -128,3 +137,12 @@ a {
     background-color:  rgb(97, 28, 28, 0.7);
     border-color:  rgba(97, 28, 28, 0.7);
 }
+
+.jumbotron {
+    background-color: rgb(41, 52, 71);
+}
+
+.fakeimg {
+    height: 200px;
+    background: #aaa;
+  }
