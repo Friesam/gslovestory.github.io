@@ -7,7 +7,9 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
   <link rel="stylesheet" href="assets/css/index.css" />
   <link rel="stylesheet" href="assets/css/rsvp.css" />
+  <link type="text/css" rel="stylesheet" href="assets/css/weddingParty.css" />
   <link type="text/css" rel="stylesheet" href="assets/css/schedule.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.2/css/bulma.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
@@ -55,87 +57,304 @@
         </div>
     </nav>
     <div class="container" style="margin-top:30px">
-    <div class="row outer-div">
-        <div class="col-sm-8">
-            <img class="golden-flower" src="https://d2uft7zh7kxc3y.cloudfront.net/graphicAccents/accent_metallic_wreath@3x.png">
-            <h3 class="title-header bold-text">Make Your RSVP</h3>
-                <p class="title-header">Kindly Enter Your Details</p>
-				<form id="nameForm" action="" method="post" class="table-responsive">
-					<div  id="detailsForm">
+		<div class="row outer-div">
+			<div class="col-sm-8">
+				<img class="golden-flower" src="https://d2uft7zh7kxc3y.cloudfront.net/graphicAccents/accent_metallic_wreath@3x.png">
+				<h3 class="title-header bold-text">Make Your RSVP</h3>
+					<p class="title-header">Kindly Enter Your Details</p>
+					<form id="nameForm" action="" method="post" class="table-responsive">
+						<div  id="detailsForm">
+							<div class="form-row">
+							<div class="form-group col-md-6">
+								<label for="inputEmail4">First Name</label>
+								<input type="text" class="form-control" id="firstName" name="firstName"placeholder="First Name">
+							</div>
+							<div class="form-group col-md-6">
+								<label for="inputPassword4">Last Name</label>
+								<input type="text" class="form-control" id="lastName" name="lastName" placeholder="Last Name">
+							</div>
+							</div>
+							<div class="form-group">
+								<label for="inputAddress">Enter your Phone Number</label>
+								<input type="number" class="form-control" id="phoneNumber" name="phoneNumber" placeholder="Phone Number">
+								<br>
+								<button type="submit" id="nameButton" class="btn btn-primary" name="submit">Next</button>
+							</div>
+						</div>
 						<div class="form-row">
-						<div class="form-group col-md-6">
-							<label for="inputEmail4">First Name</label>
-							<input type="text" class="form-control" id="firstName" name="firstName"placeholder="First Name">
+							<p class="name-text"  id="detailsEntry"></p>
 						</div>
-						<div class="form-group col-md-6">
-							<label for="inputPassword4">Last Name</label>
-							<input type="text" class="form-control" id="lastName" name="lastName" placeholder="Last Name">
+						<div >
+								<label for="inputPassword4">Will you be able to join us at our wedding?</label>
+							<div class="form-row">
+								<div class="form-group col-md-6">
+									<button  type="button" class="btn btn-primary" name="accept" id="accept"  cols="3" value="Joyfully Accept">Joyfully Accept</button>
+								</div>
+								<div class="form-group col-md-6">
+									<button type="button" class="btn btn-primary" name="decline" id="decline" value="Regrettfully Decline">Regrettfully Decline</button>
+								</div>
+							</div>
+								<label for="inputAddress2">Would you like to include a note to the couple?</label>
+								<textarea id="coupleNote"  class="form-control" name="coupleNote" required ></textarea>
+							
+								<label for="inputAddress2">Share how you know the couple, wish them well and some wisdom for the future?</label>
+								<textarea id="wisdomNote" class="form-control" name="wisdomNote" required="required"></textarea>	  
+								<button type="submit" class="btn btn-primary rsvp-button" id="submitRsvp" name="submit" value="Submit RSVP">Submit RSVP</button>
 						</div>
+						
+						<div class="form-row">
+						<p id="textCompleted" class="completed" ></p>
 						</div>
-						<div class="form-group">
-							<label for="inputAddress">Enter your Phone Number</label>
-							<input type="number" class="form-control" id="phoneNumber" name="phoneNumber" placeholder="Phone Number">
-							<br>
-							<button type="submit" id="nameButton" class="btn btn-primary" name="submit">Next</button>
+					</form>
+					<div class="form-group">
+						<table class="table">
+							<!-- <caption>RSVP Contacts</caption> -->
+							<thead>
+							<tr>
+								<th  colspan="2" scope="col">RSVP Contacts</th>
+							</tr>
+							</thead>
+							<tbody>
+							<tr>
+								<td>Lucky Thomas</td>
+								<td>
+									<i class="fa fa-mobile" aria-hidden="true"></i>
+									0907141855
+								</td>
+							</tr>
+							<tr>
+								<td>Ope Adagbada</td>
+								<td>
+									<i class="fa fa-mobile" aria-hidden="true"></i>
+									08129694598
+								</td>
+							</tr>
+							</tbody>
+						</table>
+						<!-- <button type="button" class="btn btn-primary" id="backHome" >						
+							<a href="index.html" class="button">Back Home</a>
+						</button> -->
+					</div> 
+			</div>
+		</div>
+		<br>
+		<div class="row outer-div">
+			<div >
+				<hr>
+		<p class="title">Bridal and Groom Party </p>	
+		<hr>
+		<div class="columns">
+				<div class="column">
+						<div class="card" >
+							<a href="weddingTeam.html" >
+								<figure class="image is-square">
+									<img class="card-img-top" src="images/sinmi.jpeg" alt="Card image cap">
+								</figure>
+							</a>
+							<div class="card-body">
+								<h2>Sinmi Aiyelaagbe</h2>
+								<p class="title">MAID OF HONOUR</p>
+							</div>
+						</div>
+				</div>
+				<div class="column">
+					 <div class="card" >
+						<a href="weddingTeam.html" >
+							<figure class="image is-square">
+								<img class="card-img-top" src="images/Dxion Dimeji.jpeg" alt="Card image cap">                            
+							</figure>
+						</a>
+						<div class="card-body">
+							<h2>Dimeji Dixon</h2>
+							<p class="title">BEST MAN
+							</p>
 						</div>
 					</div>
-					<div class="form-row">
-						<p class="name-text"  id="detailsEntry"></p>
+				</div>
+		  
+				<div class="column">
+					<div class="card" >
+						<a href="weddingTeam.html">
+							<figure class="image is-square">
+								<img class="card-img-top" src="images/opeyemi.jpeg" alt="Card image cap">
+							</figure>
+						</a>
+						<div class="card-body">
+							<h2>Opeyemi  Adagbada</h2>
+							<p class="title">CHIEF BRIDES MAID</p>
+						</div>
 					</div>
-					<div >
-							<label for="inputPassword4">Will you be able to join us at our wedding?</label>
-						  <div class="form-row">
-							  <div class="form-group col-md-6">
-								  <button  type="button" class="btn btn-primary" name="accept" id="accept"  cols="3" value="Joyfully Accept">Joyfully Accept</button>
-							  </div>
-							  <div class="form-group col-md-6">
-								  <button type="button" class="btn btn-primary" name="decline" id="decline" value="Regrettfully Decline">Regrettfully Decline</button>
-							  </div>
-						  </div>
-							  <label for="inputAddress2">Would you like to include a note to the couple?</label>
-							  <textarea id="coupleNote"  class="form-control" name="coupleNote" required ></textarea>
-						 
-							  <label for="inputAddress2">Share how you know the couple, wish them well and some wisdom for the future?</label>
-							  <textarea id="wisdomNote" class="form-control" name="wisdomNote" required="required"></textarea>	  
-							  <button type="submit" class="btn btn-primary rsvp-button" id="submitRsvp" name="submit" value="Submit RSVP">Submit RSVP</button>
+				</div>
+				<div class="column">
+					<div class="card" >
+						<a href="weddingTeam.html" >
+							<figure class="image is-square">
+								<img class="card-img-top " src="images/oluwaseun.jpeg" alt="Card image cap">
+							</figure>
+						</a>
+						<div class="card-body">
+							<h2>Oluwaseun Sodunke</h2>
+							<p class="title">MAN OF HONOR</p>
+						</div>
 					</div>
-					
-					<div class="form-row">
-					  <p id="textCompleted" class="completed" ></p>
+				</div>
+		</div>
+		<div class="columns">
+					<div class="column">
+							<div class="card" style="width: 18rem;">
+								<a href="weddingTeam.html">
+									<img class="card-img-top" src="images/joju fayose.jpeg" alt="Card image cap">
+								</a>
+								<div class="card-body">
+									<h2>Joju Fayose</h2>
+									<p class="title">GROOMSMAN</p>
+							</div>
+						</div>
 					</div>
-				  </form>
-				  <div class="form-group">
-					<table class="table">
-						<!-- <caption>RSVP Contacts</caption> -->
-						<thead>
-						  <tr>
-							<th  colspan="2" scope="col">RSVP Contacts</th>
-						  </tr>
-						</thead>
-						<tbody>
-						  <tr>
-							<td>Lucky Thomas</td>
-							<td>
-								<i class="fa fa-mobile" aria-hidden="true"></i>
-								0907141855
-							</td>
-						  </tr>
-						  <tr>
-							<td>Ope Adagbada</td>
-							<td>
-								<i class="fa fa-mobile" aria-hidden="true"></i>
-								08129694598
-							</td>
-						  </tr>
-						</tbody>
-					  </table>
-					  <!-- <button type="button" class="btn btn-primary" id="backHome" >						
-						  <a href="index.html" class="button">Back Home</a>
-					  </button> -->
-				  </div> 
-        </div>
-    </div>
-    </div>
+					<div class="column">
+						<div class="card" style="width: 18rem;">
+							<a href="weddingTeam.html" >
+								<img class="card-img-top" src="images/Dayo Lawal.jpeg" alt="Card image cap">
+							</a>
+							<div class="card-body">
+								<h2>Dayo  Lawal</h2>
+								<p class="title">GROOMSMAN</p>
+						</div>
+						</div>                    
+					</div>
+					<div class="column">
+						<div class="card" style="width: 18rem;">
+							<a href="weddingTeam.html">
+								<img class="card-img-top" src="images/tofu.jpeg" alt="Card image cap">
+							</a>
+							<div class="card-body">
+								<h2>Tofunmi  Bamgbose</h2>
+								<p class="title">BRIDESMAID</p>
+							</div>
+						</div>
+					</div>
+					<div class="column">
+						<div class="card" style="width: 18rem;">
+							<a href="weddingTeam.html" >
+								<img class="card-img-top" src="images/dami.jpeg" alt="Card image cap">
+							</a>
+							<div class="card-body">
+								<h2>Damilola Fakolujo</h2>
+								<p class="title">BRIDESMAID</p>
+							</div>
+						</div>
+					</div>
+					</div>
+					<div class="columns">
+						<div class="column">
+							<div class="card" style="width: 18rem;">
+								<a href="weddingTeam.html" >
+									<img class="card-img-top" src="images/temi.jpeg" alt="Card image cap">
+								</a>
+								<div class="card-body">
+									<h2>Telemi Ola-James</h2>
+									<p class="title">BRIDESMAID</p>
+								</div>
+							</div>
+						</div>
+						<div class="column">
+							<div class="card" style="width: 18rem;">
+								<a href="weddingTeam.html" >
+									<img class="card-img-top" src="images/bisi.jpeg" alt="Card image cap">
+								</a>
+								<div class="card-body">
+									<h2>Bisi Ladele</h2>
+									<p class="title">BRIDESMAID</p>
+								<!-- <p class="card-text">
+									Bisi is a lawyer and regulatory compliance consultant. Bisi and I became friends in Secondary School and continued our friendship in Uni. We served together in CLASFON in our final year which deepened our friendship.
+								</p> -->
+								</div>
+							</div>
+						</div>
+						<div class="column">
+							<div class="card" style="width: 18rem;">
+								<a href="weddingTeam.html">
+									<img class="card-img-top" src="images/toku.jpeg" alt="Card image cap">
+								</a>
+								<div class="card-body">
+									<h2>Tokunbo  Komolafe</h2>
+									<p class="title">BRIDESMAID</p>
+								<!-- <p class="card-text">
+									Tokunbo is an entertainment lawyer. We've been classmates from primary school and became friends in Uni.
+									Tokunbo has been very supportive in helping me plan the wedding and recommending vendors.
+								</p> -->
+								</div>
+							</div>
+						</div>
+						<div class="column">
+							<div class="card" style="width: 18rem;">
+								<a href="weddingTeam.html" >
+									<img class="card-img-top" src="images/ib.jpeg" alt="Card image cap">                                </a>
+								<div class="card-body">
+									<h2>Ibukun Omisore</h2>
+									<p class="title">BRIDESMAID</p>
+								<!-- <p class="card-text">Ibk is a corprate lawyer. Ibk and I became friends in Uni.
+									Ibk is a happy person and constantly reminds me to live a little. I'm so happy to share my big day with her as she brings life to the party.
+								</p> -->
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="columns">
+						<div class="column">
+							<div class="card" style="width: 18rem;">
+								<a href="weddingTeam.html" >
+									<img class="card-img-top" src="images/Michael Essien.jpeg" alt="Card image cap">
+								</a>
+								<div class="card-body">
+									<h2>Micheal Essien</h2>
+									<p class="title">GROOMSMAN</p>
+								<!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
+								</div>
+							</div>
+						</div>
+						<div class="column">
+							<div class="card" style="width: 18rem;">
+								<a href="weddingTeam.html" >
+									<img class="card-img-top" src="images/Timilehin adeyi.jpeg" alt="Card image cap">
+								</a>
+								<div class="card-body">
+									<h2>Timilehin  Adeyi</h2>
+									<p class="title">GROOMSMAN</p>
+								<!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
+								</div>
+							</div>
+						</div>
+						<div class="column">
+							<div class="card" style="width: 18rem;">
+								<a href="weddingTeam.html">
+									<img class="card-img-top" src="images/Zumoke Ajufo.png" alt="Card image cap">
+								</a>
+								<div class="card-body">
+									<h2>Zumoke Ajufo</h2>
+									<p class="title">BRIDESMAID</p>
+								<!-- <p class="card-text">Ibk is a corprate lawyer. Ibk and I became friends in Uni.
+									Ibk is a happy person and constantly reminds me to live a little. I'm so happy to share my big day with her as she brings life to the party.
+								</p> -->
+								</div>
+							</div>
+						</div>
+						<div class="column">
+							<div class="card" style="width: 18rem;">
+								<a href="weddingTeam.html"  >
+									<img class="card-img-top" src="images/Dabi Fagbulu.jpg" alt="Card image cap">
+								</a>
+								<div class="card-body">
+									<h2>Dabi Fagbulu</h2>
+									<p class="title">GROOMSMAN</p>
+								<!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>    
+			</div>	
+		</div>
     <div class="jumbotron text-center" style="margin-bottom:0">
     	<p>
 			<a href="https://gslovestory.com/" target="_blank">Designed for #gslovestory 2021 &copy</a>

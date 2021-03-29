@@ -1,3 +1,197 @@
+img.golden-flower {
+    display: block;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    max-width: 200px;
+    max-height: 47px;
+  }
+  #mainHeader{
+    color: white;
+  }
+@media (min-width:319px) and (max-width:430px){
+
+    .left-flower-j {
+        left: 0px;
+        background-image: url(https://d2uft7zh7kxc3y.cloudfront.net/themes/simple/la_butte/la_butte_top_left.png);
+        background-size: 33.30% !important;
+        z-index: 999;
+        background-repeat: no-repeat;
+        min-height: 5%;
+        background-color: rgb(41, 52, 71);
+    }
+    .left-flower {
+        left: 0px;
+        background-image: url(https://d2uft7zh7kxc3y.cloudfront.net/themes/simple/la_butte/la_butte_top_left.png);
+        background-size: 33.30% !important;
+       
+        background-position: left top;
+        background-repeat: no-repeat;
+        min-height: 5% !important;
+        background-color: rgb(41, 52, 71);
+    }
+    #outerRow {
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    }
+    #mainHeader{
+        color: white;
+        font-size: 2em;
+    }
+    #footer {
+        height: 100px;
+    }
+    img.golden-flower {
+        display: block;
+        margin-left: auto !important;
+        margin-right: auto !important;
+        max-width: 200px;
+        max-height: 47px;
+      }
+    .row{
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        margin-right: -1px;
+        margin-left: -15px;
+    }
+    .jumbotron {
+        padding: 0rem 1rem;
+        padding-bottom: 1em;
+        margin-bottom: 2rem;
+        background-color: #e9ecef;
+    }
+
+}
+@media only screen and (min-width:431px) and (max-width:575px){
+    .left-flower-j {
+        left: 0px;
+        background-image: url(https://d2uft7zh7kxc3y.cloudfront.net/themes/simple/la_butte/la_butte_top_left.png);
+        background-size: 21% !important;
+        z-index: 999;
+        background-repeat: no-repeat;
+        min-height: 5%;
+        background-color: rgb(41, 52, 71);
+    }
+    .left-flower {
+        left: 0px;
+        background-image: url(https://d2uft7zh7kxc3y.cloudfront.net/themes/simple/la_butte/la_butte_top_left.png);
+        background-size: 33.30% !important;
+       
+        background-position: left top;
+        background-repeat: no-repeat;
+        min-height: 5% !important;
+        background-color: rgb(41, 52, 71);
+    }
+    #outerRow {
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    }
+    #footer {
+        height: 100px;
+    }
+    #navBar{
+        margin-left: 0em !important;
+    }
+    img.golden-flower {
+        display: block;
+        margin-left: auto !important;
+        margin-right: auto !important;
+        max-width: 200px;
+        max-height: 47px;
+      }
+    .row{
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        margin-right: -1px;
+        margin-left: -15px;
+    }
+    .jumbotron {
+        padding: 0rem 1rem;
+        padding-bottom: 1em;
+        margin-bottom: 2rem;
+        background-color: #e9ecef;
+    }
+}
+@media only screen and (min-width:481px) and (max-width:768px){
+    /* .left-flower-j {
+        display: none;
+    } */
+}
+@media only screen and (min-width:576px) and (max-width:769px){
+    
+.left-flower {
+    display: none;
+}
+.left-flower-j {
+    display: none;
+}
+.right-flower {
+    display: none;
+}
+.right-flower-j {
+    display: none;
+}
+    /* #outerRow {
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    } */
+    #footer {
+        height: 100px;
+    }
+    
+
+   
+    .jumbotron {
+        padding: 0rem 1rem;
+        padding-bottom: 1em;
+        margin-bottom: 2rem;
+        background-color: #e9ecef;
+    }
+}
+@media only screen and (min-width:769px) and (max-width:1024px){
+    /* .left-flower {
+        display: none;
+    }
+    .right-flower {
+        display: none;
+    }
+    .three-div{
+        width: 100%;
+    } */
+}
+@media only screen and (min-width:1025px) and (max-width:1200px){
+    /* .left-flower {
+        display: none;
+    }
+    .right-flower {
+        display: none;
+    }
+    .three-div{
+        width: 100%;
+    } */
+    #navBar{
+        margin-left: 15em !important;
+    }
+}
+@media only screen and (min-width: 1201px) and (max-width: 2100px){
+    #navBar{
+        margin-left: 15em !important;
+    }
+}
+@media (min-width: 768px){
+    .left-flower-j {
+        display: none;
+    }
+}
 @media (max-width: 768px){
     .left-flower {
         display: none;
@@ -9,11 +203,6 @@
         width: 100%;
     }
 }
-@media (min-width: 768px){
-    .left-flower-j {
-        display: none;
-    }
-}
 .title-header{
     text-align: center;
 }
@@ -22,33 +211,6 @@
 }
 @media (max-width: 960px){
 
-}
-@media only screen and (min-width:1201px){
-    /* .margin-container {
-        margin-top:30px;
-        padding-left: 3em;
-        padding-right: 3em;
-    }
-    div{
-        box-sizing: inherit;
-    }
-    .one-div{
-        box-sizing: inherit;
-    }
-
-    .golden-flower {
-        max-width: 200px;
-        max-height: 47px;
-        box-sizing: inherit;
-        display: block;
-        margin-left: auto;
-        margin-right: auto; */
-        /* width: 50%; */
-    /* }
-    .three-div{
-        background-color: rgba(255, 255, 255, 0.7);
-    }   */
-    
 }
 .left-flower {
     left: 0px;
@@ -113,20 +275,20 @@
     background-color: rgb(41, 52, 71);
 }
 .image {
-    border-radius: 8px;
+    /* border-radius: 8px;
     border: 0;
     display: inline-block;
     position: relative;
     display: block;
     border-radius: 50%;
-    width: 80%;
+    width: 80%; */
 }
 
     .image img {
-        border-radius: 8px;
-        display: block;
-        border-radius: 50%;
-        width: 80%;
+        /* border-radius: 8px;
+        display: block; */
+        /* border-radius: 50%; */
+        /* width: 80%; */
     }
 
 .nav-class {
