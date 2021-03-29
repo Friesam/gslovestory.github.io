@@ -8,6 +8,9 @@ img.golden-flower {
   #mainHeader{
     color: white;
   }
+  .container {
+    text-align: center;
+  }
 @media (min-width:319px) and (max-width:430px){
 
     .left-flower-j {
@@ -56,6 +59,7 @@ img.golden-flower {
         flex-wrap: wrap;
         margin-right: -1px;
         margin-left: -15px;
+        justify-content: center;
     }
     .jumbotron {
         padding: 0rem 1rem;
@@ -120,9 +124,7 @@ img.golden-flower {
     }
 }
 @media only screen and (min-width:481px) and (max-width:768px){
-    /* .left-flower-j {
-        display: none;
-    } */
+    
 }
 @media only screen and (min-width:576px) and (max-width:769px){
     
@@ -138,12 +140,6 @@ img.golden-flower {
 .right-flower-j {
     display: none;
 }
-    /* #outerRow {
-        display: -ms-flexbox;
-        display: flex;
-        -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    } */
     #footer {
         height: 100px;
     }
@@ -158,26 +154,9 @@ img.golden-flower {
     }
 }
 @media only screen and (min-width:769px) and (max-width:1024px){
-    /* .left-flower {
-        display: none;
-    }
-    .right-flower {
-        display: none;
-    }
-    .three-div{
-        width: 100%;
-    } */
+   
 }
 @media only screen and (min-width:1025px) and (max-width:1200px){
-    /* .left-flower {
-        display: none;
-    }
-    .right-flower {
-        display: none;
-    }
-    .three-div{
-        width: 100%;
-    } */
     #navBar{
         margin-left: 15em !important;
     }
@@ -229,49 +208,28 @@ img.golden-flower {
 }
 .left-flower-j {
     left: 0px;
-    /* top: 0px; */
     background-image: url(https://d2uft7zh7kxc3y.cloudfront.net/themes/simple/la_butte/la_butte_top_left.png);
     background-size: 100%;
-    /* width: 20%; */
-    /* position: fixed; */
     z-index: 999;
-    /* position: absolute; */
-    /* background-position: left top; */
     background-repeat: no-repeat;
-    /* background-attachment: fixed; */
     min-height: 5%;
-    /* height: 10%; */
     background-color: rgb(41, 52, 71);
 }
 .right-flower {
         right: 0px;
-        /* bottom: 0px; */
         background-image: url(https://d2uft7zh7kxc3y.cloudfront.net/themes/simple/la_butte/la_butte_bottom_right.png);
         background-size: 90%;
-        /* width: 20%; */
-        /* position: fixed; */
-        /* z-index: 999; */
-        /* position: absolute; */
         background-position: right bottom;
-        /* background-attachment: fixed; */
         background-repeat: no-repeat;
         min-height: 100%;
         background-color: rgb(41, 52, 71);
 }
 .right-flower-j {
     right: 0px;
-    /* bottom: 0px; */
     background-image: url(https://d2uft7zh7kxc3y.cloudfront.net/themes/simple/la_butte/la_butte_bottom_right.png);
     background-size: 50%;
-    /* width: 20%; */
-    /* position: fixed; */
-    /* z-index: 999; */
-    /* position: absolute; */
-    /* background-position: right bottom; */
-    /* background-attachment: fixed; */
     background-repeat: no-repeat;
     min-height: 10%;
-    /* height: 10%; */
     background-color: rgb(41, 52, 71);
 }
 .image {
