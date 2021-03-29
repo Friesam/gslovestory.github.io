@@ -5,6 +5,9 @@
     .right-flower {
         display: none;
     }
+    .three-div{
+        width: 100%;
+    }
 }
 
 .title-header{
@@ -17,7 +20,7 @@
 
 }
 @media only screen and (min-width:1201px){
-    .margin-container {
+    /* .margin-container {
         margin-top:30px;
         padding-left: 3em;
         padding-right: 3em;
@@ -35,12 +38,12 @@
         box-sizing: inherit;
         display: block;
         margin-left: auto;
-        margin-right: auto;
+        margin-right: auto; */
         /* width: 50%; */
-    }
+    /* }
     .three-div{
         background-color: rgba(255, 255, 255, 0.7);
-    }  
+    }   */
     
 }
 .left-flower {
@@ -48,9 +51,9 @@
     /* top: 0px; */
     background-image: url(https://d2uft7zh7kxc3y.cloudfront.net/themes/simple/la_butte/la_butte_top_left.png);
     background-size: 90%;
-    width: 20%;
-    position: fixed;
-    z-index: 999;
+    /* width: 20%; */
+    /* position: fixed; */
+    /* z-index: 999; */
     /* position: absolute; */
     background-position: left top;
     background-repeat: no-repeat;
@@ -63,9 +66,9 @@
         /* bottom: 0px; */
         background-image: url(https://d2uft7zh7kxc3y.cloudfront.net/themes/simple/la_butte/la_butte_bottom_right.png);
         background-size: 90%;
-        width: 20%;
-        position: fixed;
-        z-index: 999;
+        /* width: 20%; */
+        /* position: fixed; */
+        /* z-index: 999; */
         /* position: absolute; */
         background-position: right bottom;
         /* background-attachment: fixed; */
@@ -123,9 +126,7 @@ a {
 .outer-grey-container {
     background-color: rgba(255, 255, 255, 0.7);
 }
-.container{
 
-}
 .btn-primary {
     color: #fff;
     background-color: rgb(41, 52, 71);
@@ -146,3 +147,15 @@ a {
     height: 200px;
     background: #aaa;
   }
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.three-div{
+    background-color: rgba(255, 255, 255, 0.7);
+    padding-left: 0%;
+    padding-right: 0%;
+}  
