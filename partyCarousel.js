@@ -1,4 +1,5 @@
-(function () {
+$(function () {
+    console.log("here")
     function getSlideParameter(key) {
         key = key.replace(/[*+?^$.\[\]{}()|\\\/]/g, "\\$&"); // escape RegEx meta chars
         var match = location.search.match(new RegExp("[?&]" + key + "=([^&]+)(&|$)"));
@@ -9,4 +10,4 @@
             return 0;//if 'slide' parameter is not present or doesn't have correct values load 0th slide
     }
     $('#carouselExampleIndicators').carousel(getSlideParameter('slide'));
-})();
+});
