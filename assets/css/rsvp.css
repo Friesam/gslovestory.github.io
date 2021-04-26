@@ -1,6 +1,15 @@
 .rsvp-button {
     margin-top: .5em;
 }
+@media (min-width: 319px) and (max-width: 430px) {
+  #detailsEntry{
+    margin-left: .5em;
+  }
+  #textCompleted{
+    margin-left: .5em;
+  }
+}
+
 
 .centerFlex {
     align-items: center;

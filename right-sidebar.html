@@ -103,7 +103,7 @@
 							
 								<label for="inputAddress2">Share how you know the couple, wish them well and some wisdom for the future?</label>
 								<textarea id="wisdomNote" class="form-control" name="wisdomNote" required="required"></textarea>	  
-								<button type="submit" class="btn btn-primary rsvp-button" id="submitRsvp" name="submit" value="Submit RSVP">Submit RSVP</button>
+								<button type="submit" class="btn btn-primary rsvp-button" id="submitRsvp" name="submit" value="Submit RSVP" onclick="thanksMsg()">Submit RSVP</button>
 						</div>
 						
 						<div class="form-row">
@@ -173,9 +173,11 @@
       console.log(results);
     })
 	}
-	console.log(document.getElementById("phoneNumber").value);
-	
-	
+	function thanksMsg (){
+		alert("Thank you");
+		document.getElementById("nameForm").reset();
+		document.getElementById("detailsForm").reset();
+	}
 </script>
 </body>
 
