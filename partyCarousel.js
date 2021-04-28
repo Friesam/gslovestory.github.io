@@ -17,5 +17,6 @@ $(function () {
         else
             return 0;//if 'slide' parameter is not present or doesn't have correct values load 0th slide
     }
+    script.src = "https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js";
     $('#carouselExampleIndicators').carousel(getSlideParameter('slide'));
 });

@@ -112,7 +112,7 @@
                     
                         <div class="column">
                         <div class="card">
-                            <a href="weddingTeam.html?slide=1" >
+                            <a href="weddingTeam.html?#myCarousel?slide=1" >
                                 <img src="images/Dxion Dimeji.jpeg" alt="Card image cap" style="width:100%">                            
                             </a>
                             <div class="container">
@@ -125,7 +125,7 @@
                         <div class="column">
                         <div class="card">
                             <a href="weddingTeam.html?slide=2">
-                                <img style="width:100%" src="images/opeyemi.jpeg" alt="Card image cap">
+                                <img style="width:100%" src="images/opeyemi.jpeg?slide=2" alt="Card image cap">
                             </a>
                             <div class="container">
                             <h2>Opeyemi  Adagbada</h2>
@@ -306,17 +306,26 @@
     </div>
 </body>
 <!-- <script>
-    (function () {
-        function getSlideParameter(key) {
-            key = key.replace(/[*+?^$.\[\]{}()|\\\/]/g, "\\$&"); // escape RegEx meta chars
-            var match = location.search.match(new RegExp("[?&]" + key + "=([^&]+)(&|$)"));
-            var slide = match && decodeURIComponent(match[1].replace(/\+/g, " "));
-            if (Math.floor(slide) == slide && $.isNumeric(slide))
-                return parseInt(slide);
-            else
-                return 0;//if 'slide' parameter is not present or doesn't have correct values load 0th slide
-        }
-        $('#myCarousel').carousel(getSlideParameter('slide'));
-    })();
+    $(function () {
+    console.log("here")
+    function getSlideParameter(key) {
+        console.log("key ", key);
+
+        uri ="file:///Users/frieda/Downloads/gslovestory.github.io/weddingTeam.html?slide=2"
+
+        key = key.replace(/[*+?^$.\[\]{}()|\\\/]/g, "\\$&"); // escape RegEx meta chars
+        var match = location.search.match(new RegExp("[?&]" + key + "=([^&]+)(&|$)"));
+        console.log("match ", match);
+
+        console.log("decodeURIComponent ", decodeURIComponent(uri));
+
+        var slide = match && decodeURIComponent(match[1].replace(/\+/g, " "));
+        if (Math.floor(slide) == slide && $.isNumeric(slide))
+            return parseInt(slide);
+        else
+            return 0;//if 'slide' parameter is not present or doesn't have correct values load 0th slide
+    }
+    $('#carouselExampleIndicators').carousel(getSlideParameter('slide'));
+});
 </script> -->
 </html>
